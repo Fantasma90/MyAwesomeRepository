@@ -1,2 +1,18 @@
-Random value is 12294
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"> Random value is "demo" </p>
+
+<script>
+var i = Math.floor((Math.random() * 10100)+10000);
+while(i%1784!=0){
+i++;
+}
+document.getElementById("demo").innerHTML = "Random value is " + i;
+
+</script>
+
+</body>
+</html>
